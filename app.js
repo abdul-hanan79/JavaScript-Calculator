@@ -44,6 +44,7 @@ function getNumber(num)
     // console.log(num);
 var number=document.getElementById("result");
  number.value +=num;
+ 
 }
 
 function clearResult()
@@ -58,4 +59,6 @@ var result=document.getElementById("result");
 // console.log(result.value);
 // eval. it is a function that calculate the answer
 result.value=eval(result.value);
+
+
 }
