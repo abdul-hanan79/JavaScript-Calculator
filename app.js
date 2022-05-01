@@ -47,10 +47,13 @@ var number=document.getElementById("result");
  
 }
 
+
 function clearResult()
 {
 var number=document.getElementById("result");
     number.value="";
+    var number1=document.getElementById("result1");
+    number1.value="";
 }
 
 function getResult()
@@ -58,7 +61,8 @@ function getResult()
 var result=document.getElementById("result");
 // console.log(result.value);
 // eval. it is a function that calculate the answer
-result.value=eval(result.value);
+document.getElementById("result1").value=result.value;
 
+result.value=eval(result.value);
 
 }
